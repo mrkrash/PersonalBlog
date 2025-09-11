@@ -15,11 +15,11 @@ Spesso capita di dover eseguire delle azioni ripetitive e, generalmente, ci si a
 3. **MySQL**, che eseguirà il vero e proprio lavoro
 
 Ma non si potrebbe ridurre tutto a un singolo processo? Sì, basta delegare **MySQL** a fare tutto da se, ovvero con il suo [scheduler](https://dev.mysql.com/doc/refman/5.7/en/event-scheduler.html).Per usarlo, prima di tutto dobbiamo assicurarci che sia abilitato:
-```MySQL
+```sql
 SET GLOBAL event_scheduler = ON;
 ```
 e quindi creare l’evento con le informazioni necessarie e i comandi da eseguire:
-```MySQL
+```sql
 CREATE EVENT delmessage ON SCHEDULE EVERY 1 DAY
 STARTS '2017-03-01 00:00:00'
 DO

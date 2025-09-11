@@ -2,7 +2,7 @@
 title: 'Use Regexp in Doctrine with MySQL'
 description: 'MySQL support Regexp in query but Doctrine do not recognize it. We write an extension to enable it'
 pubDatetime: 2024-11-19
-abstract: 'REGEXP is a vendor specific function so Doctrine itself doesn\'t support it. Plus it\'s not a function so much as a comparison operator'
+abstract: "REGEXP is a vendor specific function so Doctrine itself doesn't support it. Plus it's not a function so much as a comparison operator"
 ogImage: '/assets/refacotring.webp'
 tags: ['PHP', 'DQL', 'Doctrine', 'Symfony', 'Developing', 'DoctrineExtension']
 ---
